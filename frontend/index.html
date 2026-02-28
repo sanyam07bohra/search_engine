@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSearch | AI-Powered Code Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            DEV<span>SEARCH</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Documentation</a>
+            <a href="#">API</a>
+            <a href="#">GitHub</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Code Faster. <br>Search Smarter.</h1>
+        <p class="subtitle">The developer-first search engine powered by local AI. Cut through the noise, skip the ads, and get straight to the solution.</p>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input id="query" placeholder="Paste an error log, or ask for syntax...">
+                <button id="searchBtn" onclick="search()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    Search
+                </button>
+            </div>
+            
+            <div class="quick-searches" id="pill-container">
+                </div>
+        </div>
+    </div>
+
+    <div id="landing-features" class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <div class="feature-title">Local AI Summaries</div>
+            <div class="feature-desc">Powered by DeepSeek-Coder. We read the documentation for you and extract the exact syntax you need.</div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-title">High-Trust Filtering</div>
+            <div class="feature-desc">Algorithmically prioritizes Stack Overflow, GitHub, and official docs over SEO-stuffed tutorial spam.</div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-title">Zero Tracking</div>
+            <div class="feature-desc">No cookies, no ads, no trackers. Just clean, developer-focused search results instantly.</div>
+        </div>
+    </div>
+
+    <div id="loading">>>> INITIALIZING AI PROTOCOLS... PLEASE WAIT_</div>
+    
+    <div class="results-wrapper">
+        <div class="grid" id="results"></div>
+    </div>
+
+    <footer>
+        <p>Built for developers. Powered by FastAPI & Ollama.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
